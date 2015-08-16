@@ -1,0 +1,281 @@
+record(bo, "$(Sys)$(Dev)Cmd:Mail-Cmd"){
+	field(FLNK, "$(Sys)$(Dev)aSub")
+}
+
+record(mbbo, "$(Sys)$(Dev)Mode-Sel"){
+	field(ZRVL, "0")
+	field(ONVL, "1")
+	field(TWVL, "2")
+	field(THVL, "3")
+	field(ZRST, "DO NOTHING")
+	field(ONST, "SEND")
+	field(TWST, "UPDATE")
+	field(THST, "SEND AND UPDATE")
+	field(PINI, "1")
+    info(autosaveFields, "VAL")
+}
+
+record(waveform, "$(Sys)$(Dev)Val:Msg1-SP"){
+	field(NELM, "128")
+	field(FTVL, "CHAR")
+	field(PINI, "1")
+    info(autosaveFields, "VAL")
+}
+
+record(waveform, "$(Sys)$(Dev)Val:Msg2-SP"){
+	field(NELM, "128")
+	field(FTVL, "CHAR")
+	field(PINI, "1")
+    info(autosaveFields, "VAL")
+}
+
+record(waveform, "$(Sys)$(Dev)Val:Msg3-SP"){
+	field(NELM, "128")
+	field(FTVL, "CHAR")
+	field(PINI, "1")
+    info(autosaveFields, "VAL")
+}
+
+record(waveform, "$(Sys)$(Dev)Val:Msg4-SP"){
+	field(NELM, "128")
+	field(FTVL, "CHAR")
+	field(PINI, "1")
+    info(autosaveFields, "VAL")
+}
+
+record(waveform, "$(Sys)$(Dev)Val:Msg5-SP"){
+	field(NELM, "128")
+	field(FTVL, "CHAR")
+	field(PINI, "1")
+    info(autosaveFields, "VAL")
+}
+
+record(waveform, "$(Sys)$(Dev)Val:Msg6-SP"){
+	field(NELM, "128")
+	field(FTVL, "CHAR")
+	field(PINI, "1")
+    info(autosaveFields, "VAL")
+}
+
+record(waveform, "$(Sys)$(Dev)Val:Msg7-SP"){
+	field(NELM, "128")
+	field(FTVL, "CHAR")
+	field(PINI, "1")
+    info(autosaveFields, "VAL")
+}
+
+record(waveform, "$(Sys)$(Dev)Val:Msg8-SP"){
+	field(NELM, "128")
+	field(FTVL, "CHAR")
+	field(PINI, "1")
+    info(autosaveFields, "VAL")
+}
+
+record(waveform, "$(Sys)$(Dev)Val:Msg9-SP"){
+	field(NELM, "128")
+	field(FTVL, "CHAR")
+	field(PINI, "1")
+    info(autosaveFields, "VAL")
+}
+
+record(waveform, "$(Sys)$(Dev)Val:Msg10-SP"){
+	field(NELM, "128")
+	field(FTVL, "CHAR")
+	field(PINI, "1")
+    info(autosaveFields, "VAL")
+}
+#
+# The following record 
+#
+
+record(aSub, "$(Sys)$(Dev)aSub"){
+	field(INPA, "$(Sys)$(Dev)Val:Msg1-SP NPP MS")
+	field(NOA,  "128")
+	field(INPB, "$(Sys)$(Dev)Val:Msg2-SP NPP MS")
+	field(NOB,  "128")
+	field(INPC, "$(Sys)$(Dev)Val:Msg3-SP NPP MS")
+	field(NOC,  "128")
+	field(INPD, "$(Sys)$(Dev)Val:Msg4-SP NPP MS")
+	field(NOD,  "128")
+	field(INPE, "$(Sys)$(Dev)Val:Msg5-SP NPP MS")
+	field(NOE,  "128")
+	field(INPF, "$(Sys)$(Dev)Val:Msg6-SP NPP MS")
+	field(NOF,  "128")
+	field(INPG, "$(Sys)$(Dev)Val:Msg7-SP NPP MS")
+	field(NOG,  "128")
+	field(INPH, "$(Sys)$(Dev)Val:Msg8-SP NPP MS")
+	field(NOH,  "128")
+	field(INPI, "$(Sys)$(Dev)Val:Msg9-SP NPP MS")
+	field(NOI,  "128")
+	field(INPJ, "$(Sys)$(Dev)Val:Msg10-SP NPP MS")
+	field(NOJ,  "128")
+
+    # Output Records
+
+	field(OUTA, "$(Sys)$(Dev)Val:Msg1-RB NPP MS")
+	field(NOVA,  "128")
+	field(OUTB, "$(Sys)$(Dev)Val:Msg2-RB NPP MS")
+	field(NOVB,  "128")
+	field(OUTC, "$(Sys)$(Dev)Val:Msg3-RB NPP MS")
+	field(NOVC,  "128")
+	field(OUTD, "$(Sys)$(Dev)Val:Msg4-RB NPP MS")
+	field(NOVD,  "128")
+	field(OUTE, "$(Sys)$(Dev)Val:Msg5-RB NPP MS")
+	field(NOVE,  "128")
+	field(OUTF, "$(Sys)$(Dev)Val:Msg6-RB NPP MS")
+	field(NOVF,  "128")
+	field(OUTG, "$(Sys)$(Dev)Val:Msg7-RB NPP MS")
+	field(NOVG,  "128")
+	field(OUTH, "$(Sys)$(Dev)Val:Msg8-RB NPP MS")
+	field(NOVH,  "128")
+	field(OUTI, "$(Sys)$(Dev)Val:Msg9-RB NPP MS")
+	field(NOVI,  "128")
+	field(OUTJ, "$(Sys)$(Dev)Val:Msg10-RB NPP MS")
+	field(NOVJ,  "128")
+
+	# Input Flags (Reserved)
+
+	field(INPU, "$(Sys)$(Dev)Mode-Sel NPP MS")
+	field(NOU,  "1")
+
+	# Type setup
+
+	field(FTA,  "CHAR")
+	field(FTB,  "CHAR")
+	field(FTC,  "CHAR")
+	field(FTD,  "CHAR")
+	field(FTE,  "CHAR")
+	field(FTF,  "CHAR")
+	field(FTG,  "CHAR")
+	field(FTH,  "CHAR")
+	field(FTI,  "CHAR")
+	field(FTJ,  "CHAR")
+	field(FTK,  "CHAR")
+	field(FTL,  "CHAR")
+	field(FTM,  "CHAR")
+	field(FTN,  "CHAR")
+	field(FTO,  "CHAR")
+	field(FTP,  "CHAR")
+	field(FTQ,  "CHAR")
+	field(FTR,  "CHAR")
+	field(FTS,  "CHAR")
+	field(FTT,  "LONG")
+	field(FTU,  "LONG")
+
+	field(FTVA,  "CHAR")
+	field(FTVB,  "CHAR")
+	field(FTVC,  "CHAR")
+	field(FTVD,  "CHAR")
+	field(FTVE,  "CHAR")
+	field(FTVF,  "CHAR")
+	field(FTVG,  "CHAR")
+	field(FTVH,  "CHAR")
+	field(FTVI,  "CHAR")
+	field(FTVJ,  "CHAR")
+	field(FTVK,  "CHAR")
+	field(FTVL,  "CHAR")
+	field(FTVM,  "CHAR")
+	field(FTVN,  "CHAR")
+	field(FTVO,  "CHAR")
+	field(FTVP,  "CHAR")
+	field(FTVQ,  "CHAR")
+	field(FTVR,  "CHAR")
+	field(FTVS,  "CHAR")
+	field(FTVT,  "LONG")
+	field(FTVU,  "LONG")
+
+	field(SNAM, "messages")
+	field(FLNK, "$(Sys)$(Dev)FOut_")
+}
+
+record(fanout, "$(Sys)$(Dev)FOut_"){
+	field(LNK1, "$(Sys)$(Dev)Sts:Mail-Sts")
+	field(LNK2, "$(Sys)$(Dev)FOut1_")
+	field(LNK3, "$(Sys)$(Dev)FOut2_")
+	field(LNK4, "$(Sys)$(Dev)Err-Sts")
+}
+
+record(calc, "$(Sys)$(Dev)Calc_"){
+	field(INPA, "$(Sys)$(Dev)Sts:Mail-Sts NPP MS")
+	field(INPB, "$(Sys)$(Dev)Mode-Sel NPP MS")
+	field(CALC, "A==B")
+}
+
+record(bi, "$(Sys)$(Dev)Err-Sts"){
+	field(INP, "$(Sys)$(Dev)Calc_ PP MS")
+	field(ZNAM, "ERROR")
+	field(ONAM, "OK")
+	field(ZSRV, "MAJOR")
+	field(OSRV, "NO_ALARM")
+}
+
+record(mbbi, "$(Sys)$(Dev)Sts:Mail-Sts"){
+	field(INP, "$(Sys)$(Dev)aSub NPP MS")
+}
+
+record(fanout, "$(Sys)$(Dev)FOut1_"){
+	field(LNK1, "$(Sys)$(Dev)Val:Msg1-RB")
+	field(LNK2, "$(Sys)$(Dev)Val:Msg2-RB")
+	field(LNK3, "$(Sys)$(Dev)Val:Msg3-RB")
+	field(LNK4, "$(Sys)$(Dev)Val:Msg4-RB")
+	field(LNK5, "$(Sys)$(Dev)Val:Msg5-RB")
+}
+
+record(fanout, "$(Sys)$(Dev)FOut2_"){
+	field(LNK1, "$(Sys)$(Dev)Val:Msg6-RB")
+	field(LNK2, "$(Sys)$(Dev)Val:Msg7-RB")
+	field(LNK3, "$(Sys)$(Dev)Val:Msg8-RB")
+	field(LNK4, "$(Sys)$(Dev)Val:Msg9-RB")
+	field(LNK5, "$(Sys)$(Dev)Val:Msg10-RB")
+}
+
+record(waveform, "$(Sys)$(Dev)Val:Msg1-RB"){
+	field(NELM, "128")
+	field(FTVL, "CHAR")
+}
+
+record(waveform, "$(Sys)$(Dev)Val:Msg2-RB"){
+	field(NELM, "128")
+	field(FTVL, "CHAR")
+}
+
+record(waveform, "$(Sys)$(Dev)Val:Msg3-RB"){
+	field(NELM, "128")
+	field(FTVL, "CHAR")
+}
+
+record(waveform, "$(Sys)$(Dev)Val:Msg4-RB"){
+	field(NELM, "128")
+	field(FTVL, "CHAR")
+}
+
+record(waveform, "$(Sys)$(Dev)Val:Msg5-RB"){
+	field(NELM, "128")
+	field(FTVL, "CHAR")
+}
+
+record(waveform, "$(Sys)$(Dev)Val:Msg6-RB"){
+	field(NELM, "128")
+	field(FTVL, "CHAR")
+}
+
+record(waveform, "$(Sys)$(Dev)Val:Msg7-RB"){
+	field(NELM, "128")
+	field(FTVL, "CHAR")
+}
+
+record(waveform, "$(Sys)$(Dev)Val:Msg8-RB"){
+	field(NELM, "128")
+	field(FTVL, "CHAR")
+}
+
+record(waveform, "$(Sys)$(Dev)Val:Msg9-RB"){
+	field(NELM, "128")
+	field(FTVL, "CHAR")
+}
+
+record(waveform, "$(Sys)$(Dev)Val:Msg10-RB"){
+	field(NELM, "128")
+	field(FTVL, "CHAR")
+}
+

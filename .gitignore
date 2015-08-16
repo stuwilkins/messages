@@ -1,0 +1,10 @@
+bin/*
+dbd/*
+db/*
+as/*
+O.*
+*.swp
+config
+st.cmd
+envPaths
+records.dbl
